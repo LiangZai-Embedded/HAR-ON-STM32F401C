@@ -4,7 +4,7 @@
  
 * 数据集使用无线传感器数据挖掘（WISDM）实验室发布的Actitracker数据集[[链接]](http://www.cis.fordham.edu/wisdm/dataset.php)，该数据库中提供的数据是以20Hz的采样率从36个用户的口袋中使用智能手机收集的。数据包含x、y和z轴的加速度值，而用户在受控环境中执行六种不同的活动：步行、慢跑、上楼、下楼、站姿、坐姿。
  
-* 网络模型参考了[Shahnawax/HAR-CNN-Keras](https://github.com/Shahnawax/HAR-CNN-Keras)HAR-CNN-Keras的设计，将数据集进行窗口长度90，步长45，进行分割，形成24141个样本和标签值，这些样本和标签被分为两个子组，trainData和testData，比率分别为80%和20%。训练数据进一步分成具有相同分布的训练和验证数据。这里为了适配板载资源减少了全连接层的神经元个数，使测试集上的准确率从92.1%降低为85%。模型的示意图和测试脚本生成的混淆矩阵如下：
+* 网络模型参考了[Shahnawax/HAR-CNN-Keras](https://github.com/Shahnawax/HAR-CNN-Keras)的设计，将数据集进行窗口长度90，步长45，进行分割，形成24141个样本和标签值，这些样本和标签被分为两个子组，trainData和testData，比率分别为80%和20%。训练数据进一步分成具有相同分布的训练和验证数据。这里为了适配板载资源减少了全连接层的神经元个数，使测试集上的准确率从92.1%降低为85%。模型的示意图和测试脚本生成的混淆矩阵如下：
 
 <p align="center">
 <img width="971" height="574" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/model/structure.png">
