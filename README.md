@@ -1,4 +1,4 @@
-#HAR-ON-STM32F401C
+# HAR-ON-STM32F401C
 ## 概述
 * 在STM32F401C-DISCO开发板上部署一个轻量级卷积神经网络(CNN)，进行人体活动识别(HAR)，识别姿态包括步行、慢跑、上楼、下楼、站姿、坐姿。开发板正面朝下放置在右前裤兜中，系统板载LSM303DLHC加速度计，通过读取三轴加速度数据和模型处理进行用户活动的识别。 
  
@@ -7,11 +7,11 @@
 * 网络模型参考了[Shahnawax](https://github.com/Shahnawax/HAR-CNN-Keras)HAR-CNN-Keras的设计，将数据集进行窗口长度90，步长45，进行分割，形成24141个样本和标签值，这些样本和标签被分为两个子组，trainData和testData，比率分别为80%和20%。训练数据进一步分成具有相同分布的训练和验证数据。这里为了适配板载资源减少了全连接层的神经元个数，使测试集上的准确率从92.1%降低为85%。模型的示意图和测试脚本生成的混淆矩阵如下：
 
 <p align="center">
-<img width="460" height="300" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/model/structure.png">
+<img width="971" height="574" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/model/structure.png">
 </p>
 
 <p align="center">
-<img width="460" height="300" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/evaluate/Confusion%20Matrix.png">
+<img width="640" height="480" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/evaluate/Confusion%20Matrix.png">
 </p>
 
 
