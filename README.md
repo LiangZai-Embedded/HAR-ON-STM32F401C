@@ -32,7 +32,7 @@
 ## 工具
 * `STM32CubeIDE V1.10.1`
 * `STM32 X-CUBE-AI V7.1.0`
-* `STM32CubeF4 V1.27.0
+* `STM32CubeF4 V1.27.0`
 * `python3.8.13`
 * `keras2.4.3`
 * `scipy`
