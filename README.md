@@ -17,16 +17,16 @@
 
 
 ## 文件
-###1.Modelfile
+### 1.Modelfile
 * `model` 文件夹包含`actitracter_raw.csv`数据集，人类活动识别（HAR）模型的Keras实现脚本`HAR.py`,数据集清洗处理之后生成的`segments.npy`,`labels.npy`（方便脚本直接导入)，脚本生成的测试集`testData.npy`,测试集的标签`groundTruth.npy`，`structure.png`模型结构示意图以及训练好的模型文件`model.h5`
  
 * `evaluate`文件夹包含测试脚本`evaluate_model.py`，评估网络模型在testData上的性能，以及脚本生成的混淆矩阵`Confusion Matrix.png`
 
 * `cubeai_validation`文件夹包含脚本`validation.py`,将测试集`testData.npy`,测试集的标签`groundTruth.npy`转换为用于验证STM32Cube.AI生成的C模型的csv文件`testx_cubeai.csv`,`testy_cubeai.csv`
-###2.Firmware
+### 2.Firmware
 * 包括STM32F401C-DISCO开发板工程文件夹`F401_HAR`以及原理图`F401_DISCO.pdf`
 
-###3.SensorData
+### 3.SensorData
 * WISDM官网数据和相关文章 [[链接]](http://www.cis.fordham.edu/wisdm/dataset.php)
 
 
