@@ -7,7 +7,7 @@
 * 网络模型参考了[Shahnawax/HAR-CNN-Keras](https://github.com/Shahnawax/HAR-CNN-Keras)的设计，将数据集按照窗口长度90，步长45，分割，形成24141个样本和标签值，这些样本和标签被分为80%训练集和20%测试集。训练集进一步分成具有相同分布的训练和验证数据。这里为了适配板载资源减少了全连接层的神经元个数，使测试集上的准确率从92.1%降低为85%，后续会选择资源更丰富的MCU以及从板载加速度传感器搜集数据创建自己的运动数据集，模型的示意图和测试脚本生成的混淆矩阵如下：
 
 <p align="center">
-<img width="971" height="574" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/model/structure.png">
+<img width="676" height="400" src="https://github.com/LiangZai-Embedded/HAR-ON-STM32F401C/blob/main/1.Modelfile/model/structure.png">
 </p>
 
 <p align="center">
