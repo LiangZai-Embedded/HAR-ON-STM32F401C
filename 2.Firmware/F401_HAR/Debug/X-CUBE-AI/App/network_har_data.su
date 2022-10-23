@@ -1,4 +1,0 @@
-../X-CUBE-AI/App/network_har_data.c:6340:11:ai_network_har_data_activations_buffer_get	16	static
-../X-CUBE-AI/App/network_har_data.c:6358:11:ai_network_har_data_weights_buffer_get	16	static
-../X-CUBE-AI/App/network_har_data.c:6376:11:ai_network_har_data_weights_get	0	static
-../X-CUBE-AI/App/network_har_data.c:6395:9:ai_network_har_data_params_get	32	static

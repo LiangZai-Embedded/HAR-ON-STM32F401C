@@ -1,5 +1,0 @@
-../X-CUBE-AI/App/app_x-cube-ai.c:181:6:acquire_and_process_data	8	static
-../X-CUBE-AI/App/app_x-cube-ai.c:195:6:post_process	128	static
-../X-CUBE-AI/App/app_x-cube-ai.c:228:6:HAL_TIM_PeriodElapsedCallback	96	static
-../X-CUBE-AI/App/app_x-cube-ai.c:266:6:MX_X_CUBE_AI_Init	24	static
-../X-CUBE-AI/App/app_x-cube-ai.c:273:6:MX_X_CUBE_AI_Process	8	static
